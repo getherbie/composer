@@ -1,0 +1,15 @@
+{
+	"name": "getherbie/composer",
+	"description": "The composer installer for the Herbie CMS",
+	"keywords": ["getherbie", "herbie", "composer", "installer"],
+	"type": "composer-plugin",
+	"autoload": {
+		"psr-4": { "herbie\\composer\\": "" }
+	},
+	"extra": {
+		"class": "herbie\\composer\\Plugin"
+	},
+	"require": {
+		"composer-plugin-api": "1.0.0"
+	}
+}
