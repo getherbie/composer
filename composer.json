@@ -1,6 +1,6 @@
 {
 	"name": "getherbie/composer",
-	"description": "The composer installer for the Herbie CMS",
+	"description": "The composer installer for the Herbie CMS. Herbie is a file based CMS & blog system and not ready for production use yet.",
 	"keywords": ["getherbie", "herbie", "composer", "installer"],
 	"type": "composer-plugin",
     	"license":"BSD-3-Clause",
