@@ -3,6 +3,7 @@
 	"description": "The composer installer for the Herbie CMS",
 	"keywords": ["getherbie", "herbie", "composer", "installer"],
 	"type": "composer-plugin",
+    	"license":"BSD-3-Clause",
 	"autoload": {
 		"psr-4": { "herbie\\composer\\": "" }
 	},
