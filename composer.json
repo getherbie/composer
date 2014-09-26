@@ -6,10 +6,10 @@
 	"type": "composer-plugin",
     	"license":"BSD-3-Clause",
 	"autoload": {
-		"psr-4": { "herbie\\composer\\": "" }
+		"psr-4": { "Herbie\\Composer\\": "" }
 	},
 	"extra": {
-		"class": "herbie\\composer\\Plugin"
+		"class": "Herbie\\Composer\\Plugin"
 	},
 	"require": {
 		"composer-plugin-api": "1.0.0"
