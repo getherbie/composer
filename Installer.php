@@ -30,7 +30,7 @@ class Installer extends LibraryInstaller
     public function getInstallPath(PackageInterface $package)
     {
         $prefix = substr($package->getPrettyName(), 0, 17);
-        if ('herbie/plugin-' !== $prefix) {
+        if ('getherbie/plugin-' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install template, phpdocumentor templates '
                 .'should always start their package name with '
