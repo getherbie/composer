@@ -1,5 +1,5 @@
 {
-	"name": "herbie/composer",
+	"name": "getherbie/composer",
 	"homepage": "http://www.getherbie.org",
 	"description": "The composer installer for the Herbie CMS. Herbie is a file based CMS & blog system and not ready for production use yet.",
 	"keywords": ["getherbie", "herbie", "composer", "installer"],
