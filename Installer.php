@@ -30,7 +30,7 @@ class Installer extends LibraryInstaller
     public function getInstallPath(PackageInterface $package)
     {
         $prefix = substr($package->getPrettyName(), 0, 17);
-        if ('getherbie/plugin-' !== $prefix) {
+        if ('herbie/plugin-' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install template, phpdocumentor templates '
                 .'should always start their package name with '
@@ -50,7 +50,7 @@ class Installer extends LibraryInstaller
     {
         return 'herbie-plugin' === $packageType;
     }
-    
+
     /**
      * Sets the correct permission for the files and directories listed in the extra section.
      * @param CommandEvent $event
