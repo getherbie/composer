@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace herbie\composer;
+namespace Herbie\Composer;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
