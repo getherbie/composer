@@ -24,6 +24,33 @@ class Installer extends LibraryInstaller
 
     const EXTRA_EXECUTABLE = 'executable';
 
+	/**
+     * {@inheritDoc}
+     */
+    public function getInstallPath(PackageInterface $package)
+    {
+        $prefix = substr($package->getPrettyName(), 0, 17);
+        if ('getherbie/plugin-' !== $prefix) {
+            throw new \InvalidArgumentException(
+                'Unable to install template, phpdocumentor templates '
+                .'should always start their package name with '
+                .'"phpdocumentor/template-"'
+            );
+        }
+
+		$basePath = 'site/plugins/'.substr($package->getPrettyName(), 17);
+
+		return $basePath;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function supports($packageType)
+    {
+        return 'herbie-plugin' === $packageType;
+    }
+    
     /**
      * Sets the correct permission for the files and directories listed in the extra section.
      * @param CommandEvent $event
