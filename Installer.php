@@ -32,9 +32,7 @@ class Installer extends LibraryInstaller
         $prefix = substr($package->getPrettyName(), 0, 17);
         if ('getherbie/plugin-' !== $prefix) {
             throw new \InvalidArgumentException(
-                'Unable to install template, phpdocumentor templates '
-                .'should always start their package name with '
-                .'"phpdocumentor/template-"'
+                'Unable to install herbie plugin. The package name should always start with "getherbie/plugin-"'
             );
         }
 
