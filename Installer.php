@@ -24,7 +24,7 @@ class Installer extends LibraryInstaller
 
     const EXTRA_EXECUTABLE = 'executable';
 
-	/**
+    /**
      * {@inheritDoc}
      */
     public function getInstallPath(PackageInterface $package)
@@ -36,9 +36,9 @@ class Installer extends LibraryInstaller
             );
         }
 
-		$basePath = 'site/plugins/'.substr($package->getPrettyName(), 17);
+        $basePath = 'site/plugins/'.substr($package->getPrettyName(), 17);
 
-		return $basePath;
+        return $basePath;
     }
 
     /**
